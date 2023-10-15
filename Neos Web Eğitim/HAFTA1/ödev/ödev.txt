@@ -1,0 +1,39 @@
+Google:
+Front-end: HTML, CSS, JavaScript (Angular, Polymer)
+Back-end: Java, Go, Python
+
+Facebook:
+Front-end: React, JavaScript, HTML, CSS
+Back-end: Hack, PHP, Python
+
+Amazon:
+Front-end: HTML, CSS, JavaScript (React)
+Back-end: Java, C++, Python
+
+Microsoft:
+Front-end: TypeScript, JavaScript (React)
+Back-end: C#, .NET
+
+Apple:
+Front-end: Swift (for iOS), HTML, CSS, JavaScript (React for web)
+Back-end: Swift, Java
+
+Netflix:
+Front-end: JavaScript (React)
+Back-end: Java, Node.js
+
+Uber:
+Front-end: React, JavaScript
+Back-end: Python, Node.js
+
+Airbnb:
+Front-end: React, JavaScript
+Back-end: Ruby on Rails, Java
+
+Twitter:
+Front-end: React, JavaScript
+Back-end: Ruby on Rails, Scala
+
+LinkedIn:
+Front-end: Ember.js, JavaScript
+Back-end: Java

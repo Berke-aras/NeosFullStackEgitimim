@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <table border="1">
+            
+            <tr>
+                <th>Okul No</th>
+                <th>İsim</th>
+                <th>Soy İsim</th>
+                <th>Vize Notu</th>
+                <th>Final Notu</th>
+            </tr>
+
+            <tr>
+                <td>151</td>
+                <td>Ayşe</td>
+                <td>Ayşecan</td>
+                <td>70</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>196</td>
+                <td>Fatma</td>
+                <td>Fatmagil</td>
+                <td>40</td>
+                <td>30</td>
+            </tr>
+
+            <tr>
+                <td>216</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td colspan="2">50</td> <!--Row Span dikey-->
+            </tr>
+
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+        <table border="1">
+            <tr>
+                <th>Okul No</th>
+                <td>151</td>
+                <td>196</td>
+                <td>216</td>
+            </tr>
+
+            <tr>
+                <th>İsim</th>
+                <td>Ayşe</td>
+                <td>Fatma</td>
+                <td>John</td>
+            </tr>
+
+            <tr>
+                <th>Soyisim</th>
+                <td>Ayşecan</td>
+                <td>Fatmagil</td>
+                <td>Doe</td>
+            </tr>
+
+            <tr>
+                <th>Vize Notu</th>
+                <td>70</td>
+                <td>40</td>
+                <td rowspan="2">50</td>
+            </tr>
+
+            <tr>
+                <th>Final Notu</th>
+                <td>90</td> <!--td*3 yaparsam üç tane alt alta açar-->
+                <td>30</td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+        <!--font awesome-->
+        <!--cdnfontawesome-->
+        <i class="fa-solid fa-umbrella fa-fade"></i>
+        <i class="fa-solid fa-umbrella fa-fade fa-2xl"></i>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <table border="1">
+            <caption>Tablo</caption>
+            <tr>
+                <td colspan="2">Hücre 1</td>
+                <td> Hücre 2</td>
+                <td>Hücre 3</td>
+            </tr>
+            <tr>
+                <td rowspan="3"> Hücre 4</td>
+                <td>Hücre 5</td>
+                <td>Hücre 6</td>
+                <td>Hücre 7</td>
+            </tr>
+            <tr>
+                <td colspan="3">Hücre 8</td>
+            </tr>
+            <tr>
+                <td>Hücre 9</td>
+                <td colspan="2">Hücre 10</td>
+            </tr>
+        </table>
+
+
+
+
+</body>
+</html>
