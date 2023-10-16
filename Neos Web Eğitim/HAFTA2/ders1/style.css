@@ -1,3 +1,7 @@
+/*
+Cascading Style Sheet
+*/
+
 h2{
     color: aquamarine;
 }
@@ -10,4 +14,12 @@ h2{
 #id-baslik{
     color: brown;
 }
+
+p{
+    font-size: 30px;
+}
+
+/* 
+yorum satırı ctrl-ö
+ */
 
