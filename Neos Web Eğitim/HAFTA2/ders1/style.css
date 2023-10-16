@@ -2,17 +2,32 @@
 Cascading Style Sheet
 */
 
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+h1
+{   
+    font-size: 20;
+    height: 200px;
+    width: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h2{
     color: aquamarine;
 }
 
-.baslik2{
-    color: goldenrod;
-}
-
 
 #id-baslik{
-    color: brown;
+    color: #FF4C29;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+}
+
+.baslik2{
+    color: blue;
+    font-family: monospace;
 }
 
 p{
@@ -23,3 +38,34 @@ p{
 yorum satırı ctrl-ö
  */
 
+.main{
+    background-color: rgba(231, 18, 53, 0.6);
+    color: rgba(231, 12, 104, 0.849);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    border: 4px blueviolet solid;
+    border-radius: 20px;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.5)
+    
+
+    /* dashe = kesikli çizgi - solid = tek çizgi - dotted = daha sık kesikli çizgi - double - groove - ridge -hidden */
+    /* border-style: ridge; 
+    border-color: blueviolet;
+    border-width: 8px; */
+}
+
+.circle{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    border: 4px solid black;
+    border-radius: 50%;
+
+    
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
