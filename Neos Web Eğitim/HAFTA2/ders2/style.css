@@ -11,10 +11,11 @@
     height: 300px;
     width: 300px;
     background-color: steelblue;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 0; /*top right bottom left*/
     border: 2px solid black;
     padding: 20px;
     padding: 20px 50px; /*yukarı-aşağı , sol-sağ*/
+    margin: auto; /*Ortalama ekrana*/
 
 }
 
@@ -38,4 +39,14 @@ height + border + padding = tam yükseklik genislik vs hesap
 h1{
     color: green;
 }
+#ana-baslik{
+    color: blueviolet;
+}
+h1{
+    color: blue!important;
+}
+.baslik{
+    color: brown;
+}
 
+/*Onem Sırası id > class > elemt | !important zorunlu verme diğerlerini iptal ediyor*/
