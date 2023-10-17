@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Verilen Sınırı geçmez*/
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.kutu1{
+    height: 300px;
+    width: 300px;
+    background-color: steelblue;
+    margin: 0 0 20px 0;
+    border: 2px solid black;
+    padding: 20px;
+    padding: 20px 50px; /*yukarı-aşağı , sol-sağ*/
+
+}
+
+/*
+height + border + padding = tam yükseklik genislik vs hesap
+*/
+
+.kutu2{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+}
+
+/* .kutu1,
+.kutu2{
+    display: inline-block; 
+} */
+/*flex | grid | block | inline | inline-block*/
+/*none görmezden gelme(gösterilmeme) - */
+
+h1{
+    color: green;
+}
+
