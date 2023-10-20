@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 955px;
+    width: 100%;
+    background-color: blue;
+}
+
+.cati{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 400px solid transparent;
+    border-right: 400px solid transparent;
+    border-left: 400px solid transparent;
+    border-bottom: 400px solid rgb(0, 0, 0);
+    top: -350px;
+    left: 550px;
+    z-index: 2;
+}
+
+.ev-govde{
+    position: absolute;
+    height: 505px;
+    width: 550px;
+    background-color: rgb(106, 35, 165);
+    bottom: 0;
+    left: 680px;
+}
+
+.pencere{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    top: 230px;
+    left: 875px;
+    z-index: 4;
+    border: 5px solid white;
+}
+
+.kapi{
+    position: absolute;
+    height: 250px;
+    width: 170px;
+    background-color: brown;
+    z-index: 6;
+    bottom: 0;
+    left: 880px;
+}
+
+.kapi-kolu{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    z-index: 8;
+    bottom: 100px;
+    left: 900px;
+}
+
