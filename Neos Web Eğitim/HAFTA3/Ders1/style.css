@@ -1,0 +1,157 @@
+:root{
+    --bg-color: violet;
+
+    --display-method: inline-block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a,input{
+    color: inherit;
+    font-size: inherit;
+}
+
+
+h1{
+    background-color: var(--bg-color);
+    display: var(--display-method);
+
+}
+
+h1:hover{
+    background-color: wheat;
+}
+
+h2{
+    background-color: var(--bg-color);
+    display: var(--display-method);
+}
+
+p{
+    font-size: 24px;
+}
+
+p::first-line{
+    font-size: 32px;
+}
+
+p::first-letter{
+    font-weight: 900;
+    font-size: 42px;
+}
+
+a {
+    color: black;
+
+}
+
+a:hover{
+    font-size: 24px;
+    color: crimson;
+}
+
+.container p:nth-child(3){
+    color: rebeccapurple;
+}
+
+.container p:nth-child(3)::after{
+    content: "Merhaba";
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    display: var(--display-method);
+}
+
+.container p:nth-child(3)::before{
+    content: "";
+    width: 200px;
+    height: 40px;
+    background-color: aqua;
+    display: var(--display-method);
+}
+
+.birimler{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+
+
+/* a:visited{
+    ziyaret dilmiş linkler
+} */
+
+/* a:active{
+    link inaktif olduğu durumda özellik ataması yapar
+} */
+
+/* a:link{
+    henüz ziyaret edilmemiş linkler
+} */
+
+
+/* 
+container class'ına sahip div'in içindeki tüm div ve p elemntlerini seç
+
+.container div +p
+=
+.container div,
+.container p
+
+
+
+container class'ına sahip div içindeki bütün elementleri seçmek.
+.container *
+
+container class'ına sahip div içindeki decription class'ına ve paragraph-2 class'ına sahip p elemntini seçmek.
+.container .description.paragraph-2
+
+container içindeki p elementi olmayan tüm elementler
+.container *:not(p)
+
+*/
+
+
+/* 
+
+#id-name: 100
+
+.class-ame: 10
+
+element-name: 1
+
+<p style"...">paragraph</p>: 1000
+
+p#description: 100 + 1
+
+p.description: 10 + 1
+
+.main-title.header-title: 10 + 10
+
+.h1.main-title.header-title: 10 + 10 + 1
+
+- *: 0
+
+#navbar p#demo: 100+ 100+ 1
+
+
+- !important: sonsuz
+
+*/
+
+/* 
+
+header .main-title
+
+main .main-title
+
+.main-title
+
+
+*/
