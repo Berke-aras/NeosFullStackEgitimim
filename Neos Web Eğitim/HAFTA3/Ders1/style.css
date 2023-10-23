@@ -76,12 +76,34 @@ a:hover{
 
 .birimler{
     background-color: blueviolet;
-    width: 300px;
-    height: 300px;
+    width: 50vw;
+    height: 50vh;
     display: inline-block;
+    font-size: 2rem;
 }
 
 
+
+
+
+/* 
+mutlak birimler (absolute Units)
+cm (santimetre - cantimeter) => 1cm'ye eşit
+mm (milimetre - milimeter) => 1mm'ye eşit
+in (inç - inch) => 1inch değerine eşit = 96px
+px (piksel - pixel) => 1inc değerinin 1/96'sı
+pt(point => 1inch değerinin 1/72'si
+pc(picas) = 12 point
+
+
+Göreceli Birimler (Relative Units)
+em => 
+rem =>1rem = 16px (html elementinden geliyor).
+% => 
+vh => (viewport height) heigth
+vw => (viewport width) width
+
+*/
 
 /* a:visited{
     ziyaret dilmiş linkler
