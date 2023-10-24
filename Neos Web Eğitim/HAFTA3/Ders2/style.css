@@ -7,10 +7,57 @@
 
 header{
     background-color: black;
-    color: aliceblue;
+    color: wheat;
+
     display: flex;
-}
-a{
-    color: aliceblue;
+    justify-content: space-between;
+    /* start center end | space-around | space-evenly | space-between*/
+
+    align-items: center;
+    /* baseline end center */
+
+    padding: 0 30px;
+    height: 9vh;
+    font-size: 1.12rem;
 }
 
+
+a{
+    color: wheat;
+    text-decoration: none;
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-between;
+
+    /* width: 30vw; */
+    /* margin-right: 40px; */
+    gap: 80px;
+
+    /* height: 9vh; */
+}
+
+/* .link-item:nth-child(3){
+    align-self: flex-end;
+    order: 1;
+} */
+
+/* .link-item:nth-child(2){
+    align-self: center;
+} */ 
+
+.item-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.item{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
