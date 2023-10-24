@@ -12,13 +12,43 @@
 }
 
 header{
-    height: 7vh;
+    height: 6.4vh;
     background-color: white;
     border-bottom: 2px solid #e6e6e6;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17px;
+    align-items: center;
 }
 
 .logo-container img{
     width: 108px;
     height: 32px;
     filter: blur(0.4px);
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    align-items: center;
+}
+
+.link-item{
+    font-size: 1.2rem;
+}
+
+.link-item:nth-child(1),
+.link-item:nth-child(4),
+.link-item:nth-child(5){
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.link-item:nth-child(4){
+    background-color: black;
+    color: white;
+    line-height: 6.4vh;
+    padding: 0 12px;
 }
