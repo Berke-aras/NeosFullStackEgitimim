@@ -52,3 +52,24 @@ header{
     line-height: 6.4vh;
     padding: 0 12px;
 }
+
+main{
+    color: white;
+}
+
+.main-title{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 3.2rem;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.main-description{
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: .1px;
+    text-align: center;
+    line-height: 1.5;
+}
