@@ -17,12 +17,12 @@ a,input{
 }
 
 /* scroll kapattı owerflow */
-body{
-    /* overflow-y: hidden; 
+/* body{
+    overflow-y: hidden; 
     overflow-x: hidden;
-    overflow: hidden; */
+    overflow: hidden;
 
-}
+} */
 
 h1{
     background-color: var(--bg-color);
