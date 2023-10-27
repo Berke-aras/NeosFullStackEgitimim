@@ -27,18 +27,53 @@ translateY(50px) Y ekseninde 50px kaydır dikey
 
 
 */
+
 .item-1{
-    /* transform: translateX(20px); */
+    /* transition-property: all;  */
+    /*transform vs özel olarak belli bir animasyona vermek için*/
+    /* transition-timing-function: ease;
+    transition-duration: 2500ms;
+    transition-delay: 0.2ms; */
+
+    /* transition: property duration timing function delay; */
+
+    transition: transform 1.5s ease-out 0.2s;
 }
 
 .item-1:hover{
-    transform: translateX(50px);
-    transform: translateY(20px);
+    /* transform: translateX(50px);
+    transform: translateY(20px); */
+    transform: translate(100px, 100px);
+    
 
-    transform: translate(50px, 50px);
+
 }
 
 .item-2:hover{
-    transform: translateX(-50px);
-    transform: translateY(20px);
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(1.5,1.8); */
+
+    /* transform: rotate(-120deg); */
+
+    /* transform: skewX(30deg); */
+    /* transform: skewy(30deg); */
+    transform: skew(30deg , 10deg);
+
+
+}
+
+.item-3:hover{
+    /* transform: matrix(); */
+    /* sclaX, skewY, skewX, scaleY, translateX, translateY */
+    transform: rotate(-120deg);
+    transform-origin: left;
+
+}
+
+
+button {
+    display: block;
+    padding: 8px 12px;
+    margin: 0 auto;
 }
