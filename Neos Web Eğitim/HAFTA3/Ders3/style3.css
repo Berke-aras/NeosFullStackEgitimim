@@ -5,7 +5,7 @@
     --mid-blue: #2d3a5c;
     --light-blue:#dddfe3 ;
     --yellow: #fcbf10;
-    --light-blue: #f9e8d7;
+    --light-yellow: #f9e8d7;
     --lighter-yellow: #fdf5ed;
     --green: #25b778;
     --lightgreen: #d3f1e4;
@@ -13,7 +13,7 @@
     --light-red: #fbe0d8;
     --black: #111111;
     --mid-gray: #565656;
-    --light-gray: #e3e3e3;
+    --light-gray: #cfcfcf;
     --really-light-gray: #f5f5f5;
     --white: #ffffff;
 }
@@ -26,3 +26,112 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+    background-color: #eaebef;
+    width: 90vw;
+    height: 95vh;
+    margin: 0 auto;
+}
+
+.grid-container{
+    height: 90vh;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5{
+    grid-row: span 5;
+}
+
+.item-1{
+    background-color: var(--darker-blue);
+    color: white;
+}
+
+.item-2{
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.item-3{
+    background-color: var(--blue);
+    color: white;
+}
+
+.item-4{
+    background-color: var(--mid-blue);
+    color: white;
+}
+
+.item-5{
+    background-color: var(--light-blue);
+}
+
+.item-6{
+    background-color: var(--yellow);
+}
+
+.item-7{
+    background-color: var(--light-yellow);
+}
+
+.item-8{
+    background-color: var(--lighter-yellow);
+}
+
+.item-9{
+    background-color: var(--green);
+    color: white;
+}
+
+.item-10{
+    background-color: var(--lightgreen);
+}
+
+.item-11{
+    background-color: var(--red);
+    color: white;
+}
+
+.item-12{
+    background-color: var(--light-red);
+}
+
+.item-13{
+    background-color: var(--black);
+    color: white;   
+}
+
+.item-14{
+    background-color: var(--mid-gray);
+    color: white;
+}
+
+.item-15{
+    background-color: var(--light-gray);
+}
+
+.item-16{
+    background-color: var(--really-light-gray);
+}
+
+.item-17{
+    background-color: var(--white);
+}
+
+.item-10,
+.item-12,
+.item-17{
+    grid-column: span 2;
+}
