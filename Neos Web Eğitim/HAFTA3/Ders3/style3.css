@@ -1,3 +1,25 @@
+:root{
+    --darker-blue: #0b152f;
+    --dark-blue: #122c5f;
+    --blue: #2e5295;
+    --mid-blue: #2d3a5c;
+    --light-blue:#dddfe3 ;
+    --yellow: #fcbf10;
+    --light-blue: #f9e8d7;
+    --lighter-yellow: #fdf5ed;
+    --green: #25b778;
+    --lightgreen: #d3f1e4;
+    --red: #ed663b;
+    --light-red: #fbe0d8;
+    --black: #111111;
+    --mid-gray: #565656;
+    --light-gray: #e3e3e3;
+    --really-light-gray: #f5f5f5;
+    --white: #ffffff;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
