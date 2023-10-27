@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 50vh;
+    border: 5px solid black;
+    margin: 30px;
+}
+
+.item{
+    background-color: brown;
+    border: 5px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+/* 
+translateX(50px) x ekseninde 50px kaydır yatay
+
+translateY(50px) Y ekseninde 50px kaydır dikey
+
+
+*/
+.item-1{
+    /* transform: translateX(20px); */
+}
+
+.item-1:hover{
+    transform: translateX(50px);
+    transform: translateY(20px);
+
+    transform: translate(50px, 50px);
+}
+
+.item-2:hover{
+    transform: translateX(-50px);
+    transform: translateY(20px);
+}
