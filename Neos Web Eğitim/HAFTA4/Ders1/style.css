@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bgcolorchange{
+    /* 0%
+    50%
+    100% */
+    from{
+        background-color: crimson;
+    }
+
+    to{
+        background-color: teal;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 200px;
+    padding: 20px;
+    margin: 40px;
+
+    border: 5px solid black;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border: 5px solid black;
+}
+
+.item-1{
+    animation-name: bgcolorchange;
+    animation-duration: 2s;
+    animation-delay: 0.5;
+    animation-timing-function: ease-in-out;
+    animation-direction:alternate; /*normal, reverse, alternate, alternate-reverse*/
+    animation-fill-mode: both; /* none / backwards / forwards / both */
+    animation-iteration-count: infinite; /*infinit veya sayı*/
+
+    animation-play-state: running;
+
+    /* animation: animation name - animation duration - animation timing function - animation delay - animation iteration count - animation direction - animation fill mode - animation play state; */
+
+}
+
+.item-2{
+    animation: bgcolorchange 3s ease 1s infinite alternate both running;
+}
