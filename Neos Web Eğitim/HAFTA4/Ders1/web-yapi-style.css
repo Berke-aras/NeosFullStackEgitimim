@@ -52,3 +52,28 @@ i{
 .section-1 p {
     font-size: 1.2rem;
 }
+
+.section-2,
+.section-3,
+.section-4{
+    border: 5px solid black;
+    height: 50vh;
+    width: 60vw;
+    margin: 50px auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container{
+    border: 5px solid brown;
+    height: 100%;
+    width: 48%;
+}
+
+.aciklamalar{
+    border: 5px solid green;
+    height: 100%;
+    width: 48%;
+}
