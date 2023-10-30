@@ -10,10 +10,15 @@
     100% */
     from{
         background-color: crimson;
+        color: white;
     }
-
+    50%{
+        background-color: royalblue;
+        color: greenyellow;
+    }
     to{
         background-color: teal;
+        color: black;
     }
 }
 
@@ -54,3 +59,4 @@
 .item-2{
     animation: bgcolorchange 3s ease 1s infinite alternate both running;
 }
+
