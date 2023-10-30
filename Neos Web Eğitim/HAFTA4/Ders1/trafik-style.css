@@ -3,6 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@keyframes isik1{
+    from{background-color: transparent;}
+    1%{background-color: red;}
+    49%{background-color: red;}
+    50%{background-color: transparent;}
+    to{background-color: transparent;}
+}
+
+@keyframes isik2{
+    from{background-color: transparent;}
+    27%{background-color: transparent;}
+    28%{background-color: yellow;}
+    49%{background-color: yellow;}
+    50%{background-color: transparent;}
+    to{background-color: transparent;}
+}
+
+@keyframes isik3{
+    from{background-color: transparent;}
+    49%{background-color: transparent;}
+    50%{background-color: green;}
+    99%{background-color: green;}
+    to{background-color: transparent;}
+}
+
 .lamba-container{
     width: 20vw;
     height: 80vh;
@@ -29,14 +55,14 @@
 }
 
 .kirmizi-isik{
-    background-color: red;
+    animation: isik1 10s ease 0s infinite normal backwards;
 }
 
 .sari-isik{
-    background-color: yellow;
+    animation: isik2 10s ease 0s infinite normal backwards;
 }
 
 
 .yesil-isik{
-    background-color: green;
+    animation: isik3 10s ease 0s infinite normal backwards;
 }

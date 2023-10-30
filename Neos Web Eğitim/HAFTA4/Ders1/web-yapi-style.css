@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrapper {
+    background-color: silver;
+    min-height: 100vh;
+}
+
+header{
+    background-color: burlywood;
+    height: 10vh;
+}
+
+nav{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li,
+i{
+    font-size: 1.4rem;
+}
+
+.section-1{
+    background-color: rgb(126, 126, 126);
+    height: 50vh;
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.section-1 h1 {
+    font-size: 2rem;
+}
+
+.section-1 p {
+    font-size: 1.2rem;
+}
