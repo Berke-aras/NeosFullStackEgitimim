@@ -123,3 +123,10 @@ footer{
     }
 
 }
+
+/* tel yatay mod */
+@media only screen and (orientaton:landscape){}
+
+/* tel dikey mod */
+@media only screen and (orientaton:portrait){}
+
