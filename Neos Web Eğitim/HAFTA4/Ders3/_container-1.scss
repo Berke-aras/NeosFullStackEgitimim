@@ -1,7 +1,7 @@
 @import "./mixins";
 
 .container-1{
-    @include container-rules($backgroundcolor, 250px);
+    @include container-rules($backgroundcolor, $container-h);
 
     button{
         font-size: $f-size;
