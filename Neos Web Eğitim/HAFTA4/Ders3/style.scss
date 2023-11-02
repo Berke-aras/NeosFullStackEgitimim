@@ -1,12 +1,10 @@
-$bg-color: rgb(104, 39, 165);
-$f-size: 2rem;
-
-@mixin container-rules {
-    height: 300px;
+@mixin container-rules($bg-color, $yukseklik) {
+    height: $yukseklik;
     border: 5px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: $bg-color;
 }
 
 
@@ -18,8 +16,7 @@ $f-size: 2rem;
 
 
 .container-1{
-    background-color: $bg-color;
-    @include container-rules();
+    @include container-rules($backgroundcolor, 250px);
 
     button{
         font-size: $f-size;
@@ -32,6 +29,8 @@ $f-size: 2rem;
 }
 
 .container-2{
-    background-color: cadetblue;
-    @include container-rules();
+    // @include container-rules(cadetblue, 400px);
+    @extend .container-1;
+    height: 400px;
+    background-color: cornflowerblue;
 }

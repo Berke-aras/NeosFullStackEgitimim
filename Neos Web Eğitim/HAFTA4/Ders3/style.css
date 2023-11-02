@@ -4,26 +4,22 @@
   box-sizing: border-box;
 }
 
-.container-1 {
-  background-color: rgb(104, 39, 165);
-  height: 300px;
+.container-1, .container-2 {
+  height: 250px;
   border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: rgb(104, 39, 165);
 }
-.container-1 button {
+.container-1 button, .container-2 button {
   font-size: 2rem;
 }
-.container-1 button:hover {
+.container-1 button:hover, .container-2 button:hover {
   background-color: tan;
 }
 
 .container-2 {
-  background-color: cadetblue;
-  height: 300px;
-  border: 5px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  height: 400px;
+  background-color: cornflowerblue;
 }/*# sourceMappingURL=style.css.map */
