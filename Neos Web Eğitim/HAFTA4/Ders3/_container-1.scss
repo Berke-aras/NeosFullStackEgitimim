@@ -1,0 +1,21 @@
+@import "./mixins";
+
+.container-1{
+    @include container-rules($backgroundcolor, 250px);
+
+    button{
+        font-size: $f-size;
+
+        &:hover{
+            background-color: tan;
+        }
+    }
+
+}
+
+.container-2{
+    // @include container-rules(cadetblue, 400px);
+    @extend .container-1;
+    height: 400px;
+    background-color: cornflowerblue;
+}

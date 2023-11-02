@@ -1,11 +1,6 @@
-@mixin container-rules($bg-color, $yukseklik) {
-    height: $yukseklik;
-    border: 5px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: $bg-color;
-}
+@import "./variables";
+@import "./container-1";
+@import "./mixins";
 
 
 * {
@@ -14,23 +9,3 @@
     box-sizing: border-box;
 }
 
-
-.container-1{
-    @include container-rules($backgroundcolor, 250px);
-
-    button{
-        font-size: $f-size;
-
-        &:hover{
-            background-color: tan;
-        }
-    }
-
-}
-
-.container-2{
-    // @include container-rules(cadetblue, 400px);
-    @extend .container-1;
-    height: 400px;
-    background-color: cornflowerblue;
-}

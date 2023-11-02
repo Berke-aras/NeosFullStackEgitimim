@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container-1, .container-2 {
   height: 250px;
   border: 5px solid black;
@@ -22,4 +16,10 @@
 .container-2 {
   height: 400px;
   background-color: cornflowerblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
