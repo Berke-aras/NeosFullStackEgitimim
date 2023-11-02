@@ -5,9 +5,9 @@
 }
 
 .container-1 {
+  background-color: rgb(104, 39, 165);
   height: 300px;
   border: 5px solid black;
-  background-color: rgb(104, 39, 165);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -20,9 +20,9 @@
 }
 
 .container-2 {
+  background-color: cadetblue;
   height: 300px;
   border: 5px solid black;
-  background-color: cadetblue;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
