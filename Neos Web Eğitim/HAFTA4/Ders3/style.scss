@@ -9,3 +9,9 @@
     box-sizing: border-box;
 }
 
+.container-2{
+    // @include container-rules(cadetblue, 400px);
+    @extend .container-1;
+    height: 400px;
+    background-color: cornflowerblue;
+}

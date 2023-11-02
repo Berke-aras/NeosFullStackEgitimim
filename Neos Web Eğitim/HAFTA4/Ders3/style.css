@@ -13,13 +13,13 @@
   background-color: tan;
 }
 
-.container-2 {
-  height: 400px;
-  background-color: cornflowerblue;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container-2 {
+  height: 400px;
+  background-color: cornflowerblue;
 }/*# sourceMappingURL=style.css.map */
