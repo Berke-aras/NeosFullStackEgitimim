@@ -1,13 +1,15 @@
-@import "./variables";
-@import "./container-1";
-@import "./mixins";
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@import "./variables";
+@import "./mixins";
+@import "./container-1";
+// ozellige gore daha uste yaz hata verir
+
+
 
 .container-2{
     // @include container-rules(cadetblue, 400px);
