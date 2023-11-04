@@ -83,10 +83,11 @@ main{
 
 .minibox2{
     background-color: yellow;
-    height: 30px;
-    width: 8px;
-    margin: 20px;
+    height: 26px;
+    width: 6px;
+    margin: 6px 0 0 8px;
     display:inline-block;
+    position: absolute;
     
 }
 
@@ -120,9 +121,42 @@ main{
 }
 
 .left{
-    /* border: 2px solid red; */
+    border: 2px solid red; 
+    margin-top: 18px;
+    min-height: 100px;
 }
 
 h2{
     text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.left img{
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+}
+
+.left {
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-baslik{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.left-aciklama{
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+
+.left-aciklama a{
+    color: white;
 }
