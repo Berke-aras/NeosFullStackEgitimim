@@ -91,11 +91,16 @@ main{
     
 }
 
-/* main{
+.column{
     display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .news-container{
     border: 4px solid white;
@@ -105,11 +110,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .left-news{
-    border: 4px solid wheat;
     height: 100%;
     width: 38%;
 }
@@ -121,9 +124,8 @@ main{
 }
 
 .left{
-    border: 2px solid red; 
-    margin-top: 18px;
-    min-height: 50px;
+    margin-top: 30px;
+    min-height: 20px;
 }
 
 h2{
@@ -138,20 +140,13 @@ h2{
     margin-right: 10px;
 }
 
-.left {
+.left{
     display: flex;
 }
 
-.column{
+/* .right{
     display: flex;
-    flex-direction: column;
-}
-
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
+} */
 
 .left-baslik{
     text-transform: uppercase;
@@ -171,22 +166,37 @@ h2{
 .r-news1 img{
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .resim-yazi{
     position: absolute;
     z-index: 10;
-    top: 800px;
+    top: 70%;
 }
 
 .r-news2,
 .r-news3{
-    justify-content: space-between;
+    margin-top: 30px;
+    border: 3px solid salmon;
 }
 
 .r-news2 img,
 .r-news3 img{
-    height: 230px;
-    width: 310px;
+    height: 210px;
+}
+
+.white-block{
+    display: flex;
+    position: relative;
+    display: block;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
+
+/* Font büyüklüğü aradaki boşluğu bozuyor */
+.wb-yazi{
+    font-size: 1.2rem;
+    color: orange;
 }
