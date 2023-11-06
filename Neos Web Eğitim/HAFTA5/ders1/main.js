@@ -61,7 +61,9 @@ console.log(z);
 
 
 
-let gun = 1;
+let gun = prompt("Haftanın Gününü Seçiniz: ");
+// gun = parseInt(gun);
+gun -= 1;
 if (gun == 0) {
     console.log("Pazartesi");
 }
@@ -86,3 +88,38 @@ else if (gun == 6) {
 else{
     console.log("Böyle Bir Gün Yok");
 }
+
+/*
+
+Atama Operatörleri
+
+=
++=
+-=
+*=
+/=
+
+*/
+
+let sonuc = 5;
+sonuc += 15;
+console.log(sonuc);
+
+let sonuc2 = 4;
+sonuc2 *= 3;
+sonuc2 /= 2;
+sonuc2 **= 2;
+console.log(sonuc2)
+
+sonuc2 %= 8
+console.log(sonuc2)
+
+
+console.log(7 % 2 == 0)
+
+
+let kIsim = prompt("İsminizi Giriniz: "),
+    kSoyad = prompt("Soyisminizi Giriniz: "),
+    Kyas = prompt("Yaşınızı Giriniz: ");
+
+console.log(`İsim: ${kIsim}  \nSoyad: ${kSoyad} \nYaş: ${Kyas}`);
