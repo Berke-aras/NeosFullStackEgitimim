@@ -79,7 +79,7 @@ let tcKimlikNo = 11111111111;
 
 console.log("İsim: " + isim + ", " + "Soyad: " + soyad + "\n" + "Ülke: " + country + "\n" + "Age: " + age);
 
-console.log(`İsim: ${isim}  \nSoyad: ${soyad} `);
+console.log(`İsim: ${isim}  \nSoyad: ${soyad} `); //better vers
 
 const pi = 3.14;
 
