@@ -84,5 +84,5 @@ else if (gun == 6) {
     console.log("Pazar");
 }
 else{
-    console.log("Böyle Bir Gün yok 0 ile 7 arası bir değer girin");
+    console.log("Böyle Bir Gün Yok");
 }
