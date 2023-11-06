@@ -118,7 +118,6 @@ main{
 }
 
 .right-news{
-    border: 4px solid blue;
     height: 100%;
     width: 58%;
 }
@@ -138,6 +137,7 @@ h2{
     width: 110px;
     height: 110px;
     margin-right: 10px;
+    z-index: 20;
 }
 
 .left{
@@ -199,4 +199,28 @@ h2{
 .wb-yazi{
     font-size: 1.2rem;
     color: orange;
+}
+
+.discorver{
+    position: relative;
+    text-align: center;
+}
+
+.discorver-img{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.d-baslik{
+    position: absolute;
+    top: 400px;
+    right: 36%;
+    font-size: 1.6rem;
+}
+
+.d-aciklama{
+    position: absolute;
+    top: 500px;
+    right: 10%;
+    font-size: 1.2rem;
 }
