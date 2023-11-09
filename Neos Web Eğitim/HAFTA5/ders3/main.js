@@ -86,5 +86,84 @@ console.log(sayi3+sayi4);
 console.log((sayi3 * 10 + sayi4 * 10) / 10);
 
 
+sayi = 20;
+sayi2 = 20;
+sayi3 = "30";
+sonuc = "Sonuç" + sayi + sayi2 + sayi3; //Sonuç202030
+sonuc2 = "Sonuç" + (sayi + sayi2) + sayi3; //Sonuç4030
+
+console.log(sayi + sayi2);
+console.log(sayi + sayi2 + sayi3);
+console.log(sonuc);
+console.log(sonuc2);
 
 
+sayi = 5;
+console.log(Number.isSafeInteger(sayi)); 
+
+sayi = 5000000000000000000000000000;
+console.log(Number.isSafeInteger(sayi)); 
+
+console.log("--------------")
+
+sayi = 5
+sayi2 = 9.2;
+console.log(Number.isInteger(sayi));
+console.log(Number.isInteger(sayi2));
+
+console.log("\n\n------------------\n\n\n")
+
+let meyve1 = "Elma"
+let meyve2 = "Armut"
+let meyve3 = "Muz"
+
+const meyveler1 = ["Elma", "Armut", "Muz"];
+const meyveler2 = [];
+
+const meyveler = [
+    "Elma",
+    "Armut",
+    "Muz",
+    "Erik",
+    "Vişne",
+    "mandalina"
+];
+
+
+console.log(meyveler[0]);
+console.log(meyveler[0][0]);
+
+meyveler[0] = "Kiraz"
+console.log(meyveler);
+
+for (let i = 0; i < meyveler.length; i++) {
+    console.log(meyveler[i]);
+    
+}
+
+const sebzeler = new Array("pırasa", "karnıbahar", "lahana");
+console.log(sebzeler);
+
+console.log("--------------")
+
+
+let meyve = meyveler[1];
+console.log(meyve);
+
+
+const cars = ["bmw", "mercedes", "tesla"];
+console.log(typeof(cars));
+
+let car = cars.toString();
+console.log(typeof(car));
+console.log(car);
+
+//lengt sayım 1,2,3,4,5,6 .... n;
+//lengt sayım 0,1,2,3,4,5 .... n-1;
+
+
+console.log(cars[cars.length - 1]);
+
+// cars[4] = "toyota";  // yanlis Kullanım
+cars.push("toyota");
+console.log(cars);
