@@ -161,9 +161,89 @@ console.log(car);
 //lengt sayım 1,2,3,4,5,6 .... n;
 //lengt sayım 0,1,2,3,4,5 .... n-1;
 
-
 console.log(cars[cars.length - 1]);
 
 // cars[4] = "toyota";  // yanlis Kullanım
-cars.push("toyota");
+cars.push("toyota"); //doru olan - liste sonuna ekleme
 console.log(cars);
+
+cars.pop();
+console.log(cars);
+
+cars.pop(1);
+console.log(cars);
+
+//shift = listenin ilk elemanını siler
+
+// ushift( ) = listenin balına elelman ekler
+
+cars.unshift("anadol");
+console.log(cars);
+
+cars.shift();
+console.log(cars);
+
+const liste = ["item1", "item2", "item3", "item4"];
+const liste2 = ["item", "item6", "item7", "item8"];
+const liste3 = ["item9", "item10"]
+const liste4 = liste.concat(liste2, liste3); // liste birleşştir
+
+console.log(liste4);
+
+liste.splice(2, 0,"limon"); // kaçıncı index - bu ekleme yapılırken herhangi bir eleman silinecek mi - eklenecek değer.
+console.log(liste);
+
+const liste5 = liste.slice(2); // listenin belirli elemanlarını silerek yeni liste oluşturur kaynak listeye dokunmaz
+console.log(liste5);
+
+
+console.log("--------------")
+
+
+
+// sıralama işlemleri
+
+
+const isimler = ["Ali", "Ahmet", "Veli", "Mehmet", "Ayşe"]
+console.log(isimler);
+isimler.sort();
+console.log(isimler);
+
+const sayilar = ["1", "2", "14", "130"];
+console.log(sayilar);
+sayilar.sort();
+console.log(sayilar);
+
+const sayilar2 = [1, 2, 14, 130];
+console.log(sayilar2);
+sayilar2.sort();
+console.log(sayilar2);
+
+const isimler3 = ["Ali", "Ahmet", "Veli", "Mehmet", "Ayşe"]
+console.log(isimler);
+isimler.reverse();
+console.log(isimler);
+
+console.log("--------------")
+
+let zaman = new Date();
+console.log(zaman);
+
+let zaman2 = new Date(2001, 8, 27, 12, 30, 32, 40); // boş bırakılabilir
+console.log(zaman2);
+
+zaman = zaman.toLocaleString();
+console.log(zaman);
+
+
+zaman = new Date(999999999);
+console.log(zaman);
+
+
+
+
+
+
+
+
+
