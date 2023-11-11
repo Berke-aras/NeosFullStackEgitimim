@@ -208,12 +208,12 @@ h2{
     margin-top: 80px;
 }
 
-.discoverContainer img{
+.discoverContainer video{
     z-index: 2;
 }
 
 .kapsayici{
-    border: 8px solid red;
+    /* border: 8px solid red; */
     height: 80%;
     width: 60%;
 
@@ -231,12 +231,12 @@ h2{
 .kapsayici-baslik{
     font-weight: 900;
     font-size: 1.6rem;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .kapsayici-aciklama{
     font-size: 1.2rem;
-    margin: 0 200px 0 200px;
+    margin: 50px 200px 0 200px;
     font-weight: 600;
 }
 
@@ -252,14 +252,121 @@ h2{
 }
 
 .first{
+    font-weight: 900;
     margin-top: 50px;
-    border: 5px solid black;
+    /* border: 5px solid black; */
 
     width: 80%;
-    min-height: 100px;
+    min-height: 70px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
+
+    text-transform: uppercase;
 }
+
+.series{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 80%;
+
+    /* border: 4px solid blue; */
+
+}
+
+.program{
+    width: 18%;
+    /* border: 4px solid black ; */
+}
+
+.program img{
+    width: 100%;
+}
+
+
+.natgeoTV-container{
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.tv-1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.tv-2{
+    margin-top: 120px;
+}
+
+
+.imges-1{
+    position: relative;
+    z-index: 20;
+}
+
+.imges img{
+    width: 400px;
+    height: 500px;
+    z-index: 2;
+}
+
+.imges button{
+    z-index: 10;
+    position: absolute;
+    
+    left: 30%;
+    bottom: 5%;
+
+    background-color: yellow;
+    color: black;
+    width: 180px;
+    height: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.imges-2{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    z-index: 16;
+}
+
+.imges-3{
+    position: absolute;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 14;
+}
+
+.imges-4{
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    z-index: 16;
+}
+
+.imges-5{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    z-index: 14;
+}
+
