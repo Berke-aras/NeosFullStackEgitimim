@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,12 +6,12 @@
     text-decoration: none;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100vh;
     background-color: black;
 }
 
-header{
+header {
     height: 5vh;
     background-color: white;
     border-bottom: 2px solid #e6e6e6;
@@ -22,42 +22,42 @@ header{
     align-items: center;
 }
 
-.logo-container img{
+.logo-container img {
     width: 108px;
     height: 32px;
     filter: blur(0.4px);
 }
 
-.link-container{
+.link-container {
     display: flex;
     justify-content: space-between;
     width: 470px;
     align-items: center;
 }
 
-.link-item{
+.link-item {
     font-size: 1.2rem;
 }
 
 .link-item:nth-child(1),
 .link-item:nth-child(4),
-.link-item:nth-child(5){
+.link-item:nth-child(5) {
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.link-item:nth-child(4){
+.link-item:nth-child(4) {
     background-color: black;
     color: white;
     line-height: 6.4vh;
     padding: 0 12px;
 }
 
-main{
+main {
     color: white;
 }
 
-.main-title{
+.main-title {
     text-transform: uppercase;
     text-align: center;
     margin-top: 100px;
@@ -66,81 +66,80 @@ main{
     line-height: 1.5;
 }
 
-.main-description{
+.main-description {
     color: white;
     font-size: 1.4rem;
-    letter-spacing: .1px;
+    letter-spacing: 0.1px;
     text-align: center;
     line-height: 1.5;
 }
 
-.minibox{
+.minibox {
     background-color: yellow;
     height: 4px;
     width: 50px;
     margin: 20px auto 0 auto;
 }
 
-.minibox2{
+.minibox2 {
     background-color: yellow;
     height: 26px;
     width: 6px;
     margin: 6px 0 0 8px;
-    display:inline-block;
+    display: inline-block;
     position: absolute;
-    
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.news-container{
+.news-container {
     border: 4px solid white;
     height: 100vh;
     width: 60vw;
-    margin: 60px auto 0 auto ;
+    margin: 60px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.left-news{
+.left-news {
     height: 100%;
     width: 38%;
 }
 
-.right-news{
+.right-news {
     height: 100%;
     width: 58%;
 }
 
-.left{
+.left {
     margin-top: 30px;
     min-height: 20px;
 }
 
-h2{
+h2 {
     text-transform: uppercase;
     font-size: 2rem;
     padding-left: 2rem;
 }
 
-.left img{
+.left img {
     width: 110px;
     height: 110px;
     margin-right: 10px;
     z-index: 20;
 }
 
-.left{
+.left {
     display: flex;
 }
 
@@ -148,45 +147,44 @@ h2{
     display: flex;
 } */
 
-.left-baslik{
+.left-baslik {
     text-transform: uppercase;
     font-size: 1.5rem;
 }
 
-.left-aciklama{
+.left-aciklama {
     margin-top: 8px;
     font-size: 1.2rem;
 }
 
-.left-aciklama a{
+.left-aciklama a {
     color: white;
 }
 
-
-.r-news1 img{
+.r-news1 img {
     width: 100%;
     position: relative;
     z-index: 2;
 }
 
-.resim-yazi{
+.resim-yazi {
     position: absolute;
     z-index: 10;
     top: 70%;
 }
 
 .r-news2,
-.r-news3{
+.r-news3 {
     margin-top: 30px;
     border: 3px solid salmon;
 }
 
 .r-news2 img,
-.r-news3 img{
+.r-news3 img {
     height: 210px;
 }
 
-.white-block{
+.white-block {
     display: flex;
     position: relative;
     display: block;
@@ -196,7 +194,7 @@ h2{
 }
 
 /* Font büyüklüğü aradaki boşluğu bozuyor */
-.wb-yazi{
+.wb-yazi {
     font-size: 1.2rem;
     color: orange;
 }
@@ -208,11 +206,11 @@ h2{
     margin-top: 80px;
 }
 
-.discoverContainer video{
+.discoverContainer video {
     z-index: 2;
 }
 
-.kapsayici{
+.kapsayici {
     /* border: 8px solid red; */
     height: 80%;
     width: 60%;
@@ -228,30 +226,30 @@ h2{
     transform: translate(-50%, -50%);
 }
 
-.kapsayici-baslik{
+.kapsayici-baslik {
     font-weight: 900;
     font-size: 1.6rem;
     margin-top: 200px;
 }
 
-.kapsayici-aciklama{
+.kapsayici-aciklama {
     font-size: 1.2rem;
     margin: 50px 200px 0 200px;
     font-weight: 600;
 }
 
-.kapsayici-link{
+.kapsayici-link {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 800;
     margin-top: 40px;
 }
 
-.kapsayici a{
+.kapsayici a {
     color: white;
 }
 
-.first{
+.first {
     font-weight: 900;
     margin-top: 50px;
     /* border: 5px solid black; */
@@ -267,7 +265,7 @@ h2{
     text-transform: uppercase;
 }
 
-.series{
+.series {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -276,21 +274,18 @@ h2{
     width: 80%;
 
     /* border: 4px solid blue; */
-
 }
 
-.program{
+.program {
     width: 18%;
     /* border: 4px solid black ; */
 }
 
-.program img{
+.program img {
     width: 100%;
 }
 
-
-.natgeoTV-container{
-
+.natgeoTV-container {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -299,35 +294,33 @@ h2{
     justify-content: center;
 
     position: relative;
-
 }
 
-.tv-1{
+.tv-1 {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 900;
 }
 
-.tv-2{
+.tv-2 {
     margin-top: 120px;
 }
 
-
-.imges-1{
+.imges-1 {
     position: relative;
     z-index: 20;
 }
 
-.imges img{
+.imges img {
     width: 400px;
     height: 500px;
     z-index: 2;
 }
 
-.imges button{
+.imges button {
     z-index: 10;
     position: absolute;
-    
+
     left: 30%;
     bottom: 5%;
 
@@ -338,35 +331,60 @@ h2{
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
-
 }
 
-.imges-2{
+.imges-2 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 400px;
     z-index: 16;
 }
 
-.imges-3{
+.imges-3 {
     position: absolute;
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 200px;
     z-index: 14;
 }
 
-.imges-4{
+.imges-4 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     right: 400px;
     z-index: 16;
 }
 
-.imges-5{
+.imges-5 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     right: 200px;
     z-index: 14;
 }
 
+.travel-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.travel-container img {
+    z-index: -2;
+}
+
+.travel-main {
+    border: 8px solid red;
+    height: 80%;
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
