@@ -375,11 +375,10 @@ h2 {
 
 .travel-main {
     border: 8px solid red;
-    height: 80%;
+    height: 90%;
     width: 60%;
 
     display: flex;
-    align-items: center;
     flex-direction: column;
 
     z-index: 20;
@@ -387,4 +386,61 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.travel-main h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.travel-news {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel-news-left {
+    /* border: 5px solid blue; */
+    width: 64%;
+    min-height: 200px;
+}
+
+.travel-news-right {
+    border: 5px solid blueviolet;
+
+    width: 32%;
+    min-height: 200px;
+}
+
+.travel-left-1 {
+    position: relative;
+}
+
+.travel-left-1 img {
+    width: 100%;
+}
+
+.travel-left-1 p {
+    font-weight: 800;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 80px;
+    left: 16px;
+}
+
+.travel-left-2 {
+    border: 2px solid blueviolet;
+    width: 46%;
+    height: 400px;
+}
+
+.travel-left-3 {
+    border: 2px solid blue;
+    width: 46%;
+    height: 400px;
+}
+
+.travel-left-2 img,
+.travel-left-3 img {
+    width: 100%;
 }
