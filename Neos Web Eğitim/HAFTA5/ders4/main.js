@@ -100,3 +100,26 @@ console.log(kisi.fullname());
 // let not2 = +prompt("Not 2: ");
 
 // console.log(not(not1, not2));
+
+function dogrulama(sayi) {
+    if (sayi > 0) {
+        if (sayi % 2 == 0) {
+            return "Sayı Pozitif Ve Çift";
+        } else {
+            return "Sayı Pozitif Ve Tek";
+        }
+    } else if (sayi < 0) {
+        if (sayi % 2 == 0) {
+            return "Sayı Negatif Ve Çift";
+        } else {
+            return "Sayı Negatif Ve Tek";
+        }
+    } else if (sayi == 0) {
+        return "0 ve Çift";
+    } else {
+        return "Hatali Deger";
+    }
+}
+
+let deger = +prompt("Sayi Giriniz: ");
+console.log(dogrulama(deger));
