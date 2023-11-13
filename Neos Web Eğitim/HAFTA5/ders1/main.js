@@ -41,3 +41,31 @@ document.getElementById("saat-gosterim").innerHTML = new Date();
 const container = document.querySelector("#container");
 
 container.innerHTML = "<h1 class='baslik'>Bu bir Başlık</h1>";
+container.textContent; // ayni işe yarar ama element oluşturmaz yazi yazar
+container.innerText;
+
+container.style.backgroundColor = "red";
+container.style.textTransform = "uppercase";
+container.style.fontSize = "2rem";
+
+const del = document.querySelector(".silinecek");
+del.remove();
+
+const baslik = document.createElement("h1");
+baslik.innerText = "Bu Başlık Sonradan Oluşturuldu";
+container.appendChild(baslik);
+
+baslik.setAttribute("data-deger", "20");
+if (baslik.getAttribute("data-deger") == "20") {
+    console.log("Data deger 20");
+} else if (baslik.getAttribute("data-deger") == "10") {
+    console.log("Data deger 10");
+}
+
+//class list işlemleri
+const title = document.getElementsByClassName("title"); //birden falza eleman bu class ı alabileceği için liste olarak hepsini döndürüyor listeden seçiyoruz
+console.log(title);
+
+title[0].style.backgroundColor = "red";
+title[0].classList.add("ilk-baslik");
+title[0].classList.remove("title-1");
