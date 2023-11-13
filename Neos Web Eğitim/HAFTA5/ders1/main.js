@@ -69,3 +69,11 @@ console.log(title);
 title[0].style.backgroundColor = "red";
 title[0].classList.add("ilk-baslik");
 title[0].classList.remove("title-1");
+
+//toggle() => içreisine yazılan class Varsa Siler, Yoksa Ekler
+
+console.log(title[0].classList.contains("baslik"));
+console.log(title[0].classList.contains("classname"));
+
+title[0].classList += " deneme-baslik";
+title[0].classList = "deneme-baslik"; //eski değelerin tamamını siler yeni değer yazar

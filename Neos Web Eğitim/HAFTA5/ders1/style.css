@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: slategray;
+
+    gap: 20px;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 3rem;
+    padding: 20px;
+
+    cursor: pointer;
+}
+
+#btn-red {
+    background-color: red;
+    /* cursor: move; */
+}
+
+#btn-green {
+    background-color: green;
+}
+
+#btn-violet {
+    background-color: violet;
+}
+
+#btn-yellow {
+    background-color: yellow;
+}
