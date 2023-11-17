@@ -65,6 +65,45 @@ $("#button").click(function () {
     console.log($("#isim").attr("placeholder"));
 });
 
-//
+//++++++++++++++++++++++++++++++++++++++++
 //local storage
 //
+
+localStorage.setItem("theme", "dark");
+localStorage.getItem("theme");
+console.log(localStorage.getItem("theme"));
+// localStorage.removeItem("theme"); // sildi
+// localStorage.clearItem(); // tutulan tüm verileri siler // cokies sormak zorunludur eb sitelerinde arama motorlarında daha güvenli gözükmeye yarar
+
+// if (localStorage.getItem("theme") == "dark") {
+//     alert("Koyu Tema Seçildi");
+// } else {
+//     alert("Açık tema seçildi");
+// }
+
+//random sayı üretimi
+const selamla = ["merhaba", "hoşgeldin", "Sitemize hoş geldiniz"];
+
+let ramdomsayi = Math.random();
+console.log(ramdomsayi);
+
+let ramdomsayi2 = Math.round(Math.random() * 10);
+console.log(ramdomsayi2);
+
+let ramdomsayi3 = Math.round(Math.random() * 2); //kaç sayı arasından seçeceksek bi altın değerle çarpcaz
+console.log(selamla[ramdomsayi3]);
+
+//
+//
+// Belirli değerler arası random sayı seçme
+let minDeger2 = 2;
+let maxDeger = 81;
+let randomDeger = Math.round(
+    Math.random() * (maxDeger - minDeger2 + 1) + minDeger2
+);
+
+console.log(randomDeger);
+
+//++++++++++++++++++++++++
+//
+//Fetch Api
