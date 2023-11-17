@@ -30,11 +30,41 @@ baslik.css({
     "font-size": "2rem",
 });
 
-$(baslik).hover(
-    function () {
-        baslik.css("background-color", "darkblue");
+//
+// baslik.hover(
+//     function () {
+//         baslik.css("background-color", "darkblue");
+//     },
+//     function () {
+//         baslik.css("background-color", "violet");
+//     }
+// );
+
+baslik.on({
+    mouseenter: function () {
+        console.log("Mouse Girdi");
+        $(this).hide();
     },
-    function () {
-        baslik.css("background-color", "violet");
-    }
-);
+    mouseleave: function () {
+        console.log("Mouse Ayrıldı");
+        $(this).show();
+    },
+    click: function () {
+        console.log("Tıklandı");
+    },
+});
+
+//hide() > elemnetler gizlenebilir Css üzerinden visibility: hidden verir
+//show() > gösterme
+
+// value nasıl alınır formdan
+$("#button").click(function () {
+    console.log($("#isim").val());
+    console.log($(".description").text());
+    console.log($(".description").html());
+    console.log($("#isim").attr("placeholder"));
+});
+
+//
+//local storage
+//
