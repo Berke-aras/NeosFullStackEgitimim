@@ -97,3 +97,32 @@ print(selamla.strip())
 selamla = "Merhaba"
 print(selamla.replace("M", "L"))
 
+
+yas = 30
+metin = "Merhaba"
+# print("yas + metin") calismaz
+print(f"Hey, {metin} {yas}")
+
+birim_fiyat = 10
+adet = 22
+metin = f"Geçen gün pazardan {birim_fiyat} tl\'ye {adet} ayakkabı aldım." # \ = escape
+print(metin)
+
+"""
+Tüm string Metodları
+
+endswith() - içerisinde yazılan argüman stringin sonunda varsa true yoksa false döner
+
+find() - string içerisinde arama yapar
+
+index() - arama yapar vasra indexini verir
+
+isalnum() - string değeri rakamlardan aluşuyorsa true yoksa fasle
+
+islower()
+isupper()
+lower()
+upper()
+swapcase - büyük karakterli küçük küçük karakterli büyük yapar
+"""
+
