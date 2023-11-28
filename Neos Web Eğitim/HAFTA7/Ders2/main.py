@@ -133,11 +133,53 @@ else:
 
 
 
+#while
+
+i = 0
+while i < 6:
+    print(i)
+    i+=1
+    #continue
+    #break
+else:
+    # döngü koşulu false olunca 1 kere çalışır ( kuulanmak zorunlu değil)
+    print("i degiskeni 6 ya ulaştı\n")
+
+#for
+
+for i in "banana":
+    print(i)
+
+my_list = ["elma", "armut", "muz"]
+for x in my_list:
+    if x == "armut":
+        continue
+        #break
+    print(x)
 
 
 
+#serbest for
+for x in range(0, 6):
+    print(x)
+
+print("")
+
+for x in range(0, 8, 2):
+    print(x)
+
+print("")
 
 
 
+for i in range(1, 11):
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j}")
+    print("\n------------------------\n")
+
+
+print("")
+import random
+print(random.randint(0,100))
 
 
