@@ -117,6 +117,21 @@ else:
 
 print("A") if a < b else print(b)
 
+a = 14
+b = 10
+c = 12
+
+a, b, c = 14, 10, 12
+
+if a < b and a < c:
+    print("En küçük a")
+elif b < a and b < c:
+    print("En küçük b")
+else:
+    print("En küçük c")
+
+
+
 
 
 
