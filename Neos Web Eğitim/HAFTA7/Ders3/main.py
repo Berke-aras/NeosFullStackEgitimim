@@ -151,4 +151,117 @@ meyveler.clear()
 print(meyveler)
 
 
+print("\n\n\n\n")
 
+
+#Dictionary
+
+sozluk = {
+    "anahtar1" : "deger1",
+    "anahtar2" : "deger2",
+    "anahtar3" : "deger3",
+    "anahtar4" : "deger4",
+    "anahtar5" : 5,
+}
+
+print(sozluk["anahtar1"])
+print(sozluk["anahtar5"])
+
+#anahtarların tamamını getirmek için
+print(sozluk.keys())
+
+#değerlerin tamamını getirmek için
+print(sozluk.values())
+
+#hem anahtar hem değer çağırmak için 
+print(sozluk.items())
+
+
+print(len(sozluk))
+
+sozluk["anahtar5"] = "deger6"
+print(sozluk)
+
+sozluk["anahtar6"] = "deger6"
+print(sozluk)
+
+araba = {
+    "marka": "Ford",
+    "model": "Mustang",
+    "yil": "1969",
+    "yil": "1976"
+}
+
+print(araba["yil"])
+print(araba.keys())
+
+araba["renk"] = ["renk1", "renk2", "renk3"]
+print(araba)
+
+#dict constructor
+sozluk1 = dict(name="John", age=36, country="US")
+print(sozluk1)
+
+if "name" in sozluk1:
+    print("isim değeri var")
+
+sozluk1.update({"name": "leslie", "nation":"American"})
+print(sozluk1)
+
+#silme
+# sozluk1.pop("nation")
+# del sozluk1["nation"]
+
+#tüm sözlüğü siler
+# del sozluk1
+
+#son eleman silem
+# sozluk1.popitem()
+
+#clear() fonsyonu sözlüğün içerisindeki bütün anahtar ve değerleri siler
+
+#sözlüklerde for döngüsü
+sozluk1 = dict(name="John", age=36, country="US", nation="american")
+
+#tüm anahtarları yazdırma
+for anahatar in sozluk1.keys():
+    print(anahatar)
+
+#tüm degerleri yazdırma
+for deger in sozluk1.values():
+    print(deger)
+
+#tüm itemleri tek tek yazdırma
+for item in sozluk1.items():
+    print(item)
+
+
+
+for x in sozluk1:
+    print(x, sozluk1[x])
+
+for x, y in sozluk1.items():
+    print(x, y)
+
+
+cocuklarim = {
+    
+    "cocuk1" : {
+        "isim" : "ahmed",
+        "soyad" : "ab123",
+        "yas": 3
+        },
+    "cocuk2" : {
+        "isim" : "mayse",
+        "soyad" : "ab123",
+        "yas": 8
+        },
+    "cocuk3" : {
+        "isim" : "muhsin",
+        "soyad" : "ab123",
+        "yas": 14
+        },
+    
+}
+
+print(cocuklarim["cocuk2"]["isim"])
