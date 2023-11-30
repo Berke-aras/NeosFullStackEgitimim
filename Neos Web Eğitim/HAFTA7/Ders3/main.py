@@ -57,5 +57,28 @@ sayiGoster()
 print(x)
 
 
+#
+print("")
 
+def fonk(*isimler):
+    for i in isimler:
+        print(i)
 
+fonk("ali", "ahmet", "ayşe")
+
+print("")
+
+def tek_cift(*sayilar):
+    cift_toplam = 0
+    tek_toplam = 0
+    for i in sayilar:
+        if i%2 == 0:
+            cift_toplam += i
+        elif i%2 != 0:
+            tek_toplam += i
+
+    return tek_toplam, cift_toplam
+    
+sonuc = tek_cift(1,2,3,4,5,6,7,8,9)
+
+print(f"Tek Toplam: {sonuc[0]} \nÇift Toplam: {sonuc[1]}")
