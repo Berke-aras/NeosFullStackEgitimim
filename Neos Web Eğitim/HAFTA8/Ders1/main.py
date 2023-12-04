@@ -48,26 +48,25 @@ def asalmi(sayi):
 
 #99 dakuza kadar kelimlerle yazdırma
 def sayiYazdir(sayi):
-    birler = ["sıfır", "bir", "iki", "üç", "dört","beş", "altı", "yedi", "sekiz", "dokuz"]
-    onlar = ["on", "yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
+    birler_listesi = ["sıfır", "bir", "iki", "üç", "dört","beş", "altı", "yedi", "sekiz", "dokuz"]
+    onlar_listesi = ["on", "yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
 
     sayi = int(sayi)
-
     sayiUzunluk = len(str(sayi))
 
     if sayiUzunluk == 1:
-        ilk = birler[sayi]
-        print(ilk)
+        birler = birler_listesi[sayi]
+        print(birler)
     elif sayiUzunluk == 2:
-        ilk = ""
-        birl = sayi % 10
-        if birl != 0:
-            ilk = birler[birl]
+        birler = ""
+        birler = sayi % 10
+        if birler != 0:
+            birler = birler_listesi[birler]
         
         onl = int (sayi / 10)
-        iki = onlar[onl - 1]
+        onlar = onlar_listesi[onl - 1]
         
-        print(iki,ilk)
+        print(onlar,birler)
     else:
         print("Hatalı Giriş")
 
