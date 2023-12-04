@@ -19,8 +19,8 @@ def armstrong(sayi):
     else:
         print("Hatalı Giriş")
 
-sayi = input("Sayi Girin: ")
-armstrong(sayi)
+# sayi = input("Sayi Girin: ")
+# armstrong(sayi)
 
 #girilen sayı asal mı 1 ile kendisi hariç hiç bir sayıya bölünemez
 
@@ -31,9 +31,31 @@ for i in range(2, sayi):
         pass
 
 
-birler = ["sıfır", "bir", "iki", "üç", "dört","beş", "altı", "yedi", "sekiz", "dokuz"]
-onlar = ["on", "yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
+#99 dakuza kadar kelimlerle yazdırma
 
-sayi = 21
+def sayiYazdir(sayi):
+    birler = ["sıfır", "bir", "iki", "üç", "dört","beş", "altı", "yedi", "sekiz", "dokuz"]
+    onlar = ["on", "yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
 
-sayiUzunluk
+    sayi = int(sayi)
+
+    sayiUzunluk = len(str(sayi))
+
+    if sayiUzunluk == 1:
+        ilk = birler[sayi]
+        print(ilk)
+    elif sayiUzunluk == 2:
+        ilk = ""
+        birl = sayi % 10
+        if birl != 0:
+            ilk = birler[birl]
+        
+        onl = int (sayi / 10)
+        iki = onlar[onl - 1]
+        
+        print(iki,ilk)
+    else:
+        print("Hatalı Giriş")
+
+sayi = input("Sayi Girin: ")
+sayiYazdir(sayi)
