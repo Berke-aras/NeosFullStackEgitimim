@@ -1,6 +1,5 @@
 # armstrong sayı
-# 153 = 1**3 + 5**3 + 3**3 - eğer eşitse armstron sayi
-# 1416 = 1**4 + 4**4 + 1**4 + 6**4
+# 153 = 1**3 + 5**3 + 3**3 - eğer eşitse armstrong sayi
 def armstrong(sayi):
     sayiUzunluk = len(str(sayi))
 
@@ -43,6 +42,7 @@ def asalmi(sayi):
 
 # sayi = input("Sayı: ")
 # asalmi(sayi)
+
 
 
 
