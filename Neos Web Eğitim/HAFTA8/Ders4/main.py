@@ -39,5 +39,41 @@ print(car2)
 car2.aracıAC(1555)
 car1.aracıAC(456)
 
+print("\n\n\n\n")
 
+#miras
 
+class Kitap():
+    def __init__(self, sayfa_sayisi, yazar, kitap_ismi, basım_tarihi, yayinevi, fiyat):
+        self.sayfa_sayisi = sayfa_sayisi
+        self.yazar = yazar
+        self.kitap_ismi = kitap_ismi
+        self.basim_tarihi = basım_tarihi
+        self.yayinei = yayinevi
+        self.fiyat = fiyat
+        
+        print("nesne Başarıyla oluşturuldu")
+    
+    def __len__(self):
+        return self.sayfa_sayisi
+    
+    def __str__(self):
+        return f'Kitap Adı: {self.kitap_ismi}'
+
+kitap_1 = Kitap(351, "J.K. Roeling", "Lord Of The Rings", 1985, "Universal", "30$")
+print(len(kitap_1))
+print(kitap_1)
+
+print("")
+
+class Roman(Kitap):
+    def __init__(self, sayfa_sayisi, yazar, kitap_ismi, basım_tarihi, yayinevi, fiyat, kategori):
+        super().__init__(sayfa_sayisi, yazar, kitap_ismi, basım_tarihi, yayinevi, fiyat)
+        self.kategori = kategori
+
+    def __str__(self):
+        return f'YazarAdı: {self.kategori}\nKitap Adı: {self.kitap_ismi}'
+
+kitap_2 = Roman(359, "Dan Brown", "Cehennem", 2011, "Universal", "15$", "Polisiye")
+print(len(kitap_2))
+print(kitap_2)
