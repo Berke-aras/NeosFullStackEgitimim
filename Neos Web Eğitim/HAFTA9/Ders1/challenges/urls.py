@@ -6,6 +6,25 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('ocak', views.ocak),
-    path('subat' ,views.subat),
+    path('<month_name>', views.monthly_challanges)
+    
+    
+    
+    
 ]
+
+
+
+
+    # path('ocak', views.ocak),
+    # path('subat' ,views.subat),
+    # path('mart', views.mart),
+    # path('nisan', views.nisan),
+    # path('mayis', views.mayis),
+    # path('haziran', views.haziran),
+    # path('temmuz', views.temmuz),
+    # path('ogustos', views.agustos),
+    # path('eylul', views.eylul),
+    # path('ekim', views.ekim),
+    # path('kasim', views.kasim),
+    # path('aralik', views.aralik),
