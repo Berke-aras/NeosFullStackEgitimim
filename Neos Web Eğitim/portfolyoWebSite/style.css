@@ -26,6 +26,7 @@ body {
 nav {
     z-index: 999;
     position: fixed;
+    bottom: 20px;
 }
 
 .item a,
@@ -33,7 +34,7 @@ nav {
     text-decoration: none;
     color: var(--forth);
     font-weight: 900;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .menu {
@@ -111,18 +112,7 @@ span {
 .item:nth-child(6) {
     transition-delay: 0.2s;
 }
-.item:nth-child(7) {
-    transition-delay: 0.15s;
-}
-.item:nth-child(8) {
-    transition-delay: 0.1s;
-}
-.item:nth-child(9) {
-    transition-delay: 0.05s;
-}
-.item:nth-child(10) {
-    transition-delay: 0s;
-}
+
 .menu:hover .item:nth-child(1) {
     transition-delay: 0.25s;
 }
@@ -141,18 +131,6 @@ span {
 .menu:hover .item:nth-child(6) {
     transition-delay: 0.5s;
 }
-.menu:hover .item:nth-child(7) {
-    transition-delay: 0.55s;
-}
-.menu:hover .item:nth-child(8) {
-    transition-delay: 0.6s;
-}
-.menu:hover .item:nth-child(9) {
-    transition-delay: 0.65s;
-}
-.menu:hover .item:nth-child(10) {
-    transition-delay: 0.7s;
-}
 
 /* BODY */
 .header,
@@ -170,8 +148,26 @@ span {
     background-color: var(--second);
 }
 
+/* Portfolio */
 .portfolio {
     background-color: var(--third);
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: "Pixelify Sans", sans-serif;
+    margin-top: 10px;
+}
+
+.portfolio i {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 /* .header,
