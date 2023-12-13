@@ -27,9 +27,21 @@ def monthly_challanges(request, month_name):
     try:
         challanges_text = monthly_challanges_dict[month_name]
     except:
-        return HttpResponse(f"<h1>Aradığını Sayfa Bulunamadı</h1>")
+        return HttpResponse("<h1>Aradığını Sayfa Bulunamadı</h1>")
     
     return HttpResponse(f"<h1>{challanges_text}</h1>")
+
+
+def monthly_challanges_by_number(request, month_number):
+    try:
+        month = list(monthly_challanges_dict.keys())
+        month_name = month[month_number - 1]
+        #0 
+    except:
+        return HttpResponse("<h1>Aradığını Sayfa Bulunamadı Sayi</h1>")
+    
+    return HttpResponse(f"<h1>{month_name}</h1>")
+
 
 
 
@@ -42,6 +54,10 @@ def monthly_challanges(request, month_name):
 # else:
 #     return HttpResponseNotFound("Aradiginiz Sayfa Bulunamadı")
 # return HttpResponse(response)
+
+
+
+
 # def ocak(request):
 #     return HttpResponse("<h1>Ocak Ayı Görevi: bla bla</h1>")
 
