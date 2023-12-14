@@ -36,11 +36,13 @@ def index(request):
     # return HttpResponse(f"<ul>{list_items}</ul>")
 
 def monthly_challanges(request, month_name):
-    
+    c_month = month_name.capitalize()
     try:
         challanges_text = monthly_challanges_dict[month_name]
         return render(request, "challange.html", {
-        "month": challanges_text 
+        "month": challanges_text, 
+        "month_name": month_name,
+        "c_month": c_month,
     })  
     except:
         return render(request, "base.html")
