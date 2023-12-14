@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 
 # Create your views here.
 
@@ -16,32 +16,55 @@ monthly_challanges_dict = {
     "eylul": "Eylül Ayı Challange",
     "ekim": "Ekim Ayı Challange",
     "kasim": "Kasım Ayı Challange",
-    "aralik": "Aralık Ayı Challange"
+    "aralik": "Aralık Ayı Challange",
 }
 
 
 def index(request):
-    return HttpResponse("<h1>Burası Ana Sayfa</h1>")
+    aylar = list(monthly_challanges_dict.keys())
+    
+    return render(request, "index.html", {
+        "months": aylar
+    })  
+    
+    
+    # list_items = ""
+    # months = list(monthly_challanges_dict.keys())
+    # for month in months:
+    #     list_items += f"<li><a href='{month}'>{month.capitalize()}</a></li>"
+    
+    # return HttpResponse(f"<ul>{list_items}</ul>")
 
 def monthly_challanges(request, month_name):
+    
     try:
         challanges_text = monthly_challanges_dict[month_name]
+        return render(request, "challange.html", {
+        "month": challanges_text 
+    })  
     except:
         return HttpResponse("<h1>Aradığını Sayfa Bulunamadı</h1>")
     
-    return HttpResponse(f"<h1>{challanges_text}</h1>")
 
 
 def monthly_challanges_by_number(request, month_number):
+    
     try:
         month = list(monthly_challanges_dict.keys())
         month_name = month[month_number - 1]
-        #0 
+        return HttpResponseRedirect("" + month_name)#linke gider yukardaki burada
     except:
-        return HttpResponse("<h1>Aradığını Sayfa Bulunamadı Sayi</h1>")
+        return HttpResponse("<h1>Aradığın Sayfa Bulunamadı Sayi</h1>")
     
-    return HttpResponse(f"<h1>{month_name}</h1>")
-
+    
+    
+    # month = list(monthly_challanges_dict.keys())
+    # month_name = month[month_number - 1]
+        
+    # if month_number > len(month):
+    #     return HttpResponse("<h1>Aradığın Sayfa Bulunamadı Sayi</h1>")
+    # else:
+    #     return HttpResponseRedirect("" + month_name)#linke gider
 
 
 
