@@ -43,7 +43,7 @@ def monthly_challanges(request, month_name):
         "month": challanges_text 
     })  
     except:
-        return HttpResponse("<h1>Aradığını Sayfa Bulunamadı</h1>")
+        return render(request, "base.html")
     
 
 
@@ -52,9 +52,9 @@ def monthly_challanges_by_number(request, month_number):
     try:
         month = list(monthly_challanges_dict.keys())
         month_name = month[month_number - 1]
-        return HttpResponseRedirect("" + month_name)#linke gider yukardaki burada
+        return HttpResponseRedirect("" + month_name) #linke gider yukardaki burada
     except:
-        return HttpResponse("<h1>Aradığın Sayfa Bulunamadı Sayi</h1>")
+        return render(request, "base.html")
     
     
     
