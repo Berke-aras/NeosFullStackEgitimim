@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block page_title %} Ana Sayfa {% endblock %}
 
 {% block main_content %}
@@ -13,6 +15,8 @@
     <li><a href='{% url "monthly_challange" month %}''>{{ month }}</a></li>
     {% endfor %}
 </ul>
+
+<img src="{% static 'fotograf.jpg' %}" alt="a">
 
 
 {% include "includes/footer.html" %}
