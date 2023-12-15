@@ -5,9 +5,9 @@ from . import views
 # boş bırakmak ana sayfa ( http://127.0.0.1:8000/ mesela bunu kendisi)
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name="index_page"),
     path('<int:month_number>', views.monthly_challanges_by_number),
-    path('<str:month_name>', views.monthly_challanges),
+    path('<str:month_name>', views.monthly_challanges, name="monthly_challange"),
     
     
 ]
