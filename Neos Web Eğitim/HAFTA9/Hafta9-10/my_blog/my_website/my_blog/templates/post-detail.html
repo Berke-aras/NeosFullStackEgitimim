@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_title %} POst Detail {% endblock %}
+{% block page_title %} Post Detail {% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href={% static 'post-detail.css' %}>
+{% endblock  %}
 
 {% block main_content %}
-<h1>POst Detail</h1>
+<h1>Post Detail No: {{ id_no }}</h1>
+<a href={% url "indexPage" %}>Anasayfa</a>
+<a href={% url "allPosts" %}>Tüm Postlar</a>
 {% endblock %}

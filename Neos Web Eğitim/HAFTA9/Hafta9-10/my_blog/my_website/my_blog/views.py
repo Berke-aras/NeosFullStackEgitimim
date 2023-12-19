@@ -8,5 +8,7 @@ def index_page(request):
 def all_posts(request):
     return render( request, "all-posts.html")
 
-def post_detail(request):
-    return render( request, "post-detail.html")
+def post_detail(request, id):
+    return render( request, "post-detail.html", {
+                "id_no": id
+                })

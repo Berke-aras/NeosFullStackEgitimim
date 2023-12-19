@@ -3,6 +3,11 @@
 
 {% block page_title %} AnaSayfa {% endblock  %}
 
+{% block css_files %}
+<link rel="stylesheet" href={% static 'index.css' %}>
+{% endblock  %}
+
 {% block main_content %}
 <h1>Ana Sayfa</h1>
+<a href={% url "allPosts" %}>Tüm Postlar</a>
 {% endblock  %}
