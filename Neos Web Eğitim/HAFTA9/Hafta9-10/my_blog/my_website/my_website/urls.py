@@ -15,8 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include("my_blog.urls")),
 ]
+
+
+"""
+Tanıtım Alanı, sn 3 postun card yapısı
+"""
+
+"""
+Paylaştığımız bütün postları kart yapısı olarak gösterme
+"""
+
+"""
+spesifik olarak tıklanan postta o postun içeriği ve görüntüleri gotoğrafları .........
+"""
