@@ -19,6 +19,8 @@ body {
     font-family: "Source Code Pro", monospace;
     line-height: 1.6;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* NAV */
@@ -148,27 +150,76 @@ span {
     background-color: var(--second);
 }
 
+/* HOME */
+#home h2{
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+
 /* Portfolio */
+.bounce {
+animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
 .portfolio {
     background-color: var(--third);
-    display: flex;
-    justify-content: center;
+
 }
+
 
 .portfolio h2 {
     font-weight: 900;
     font-size: 3rem;
     font-family: "Pixelify Sans", sans-serif;
-    margin-top: 10px;
+    text-align: center;
 }
 
 .portfolio i {
     font-weight: 900;
     font-size: 3rem;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    margin-top: 5px;
+    position: relative;
+    top: 50%;
+    left: 49%;
+    margin-right: -50%;
 }
+
+
+.project-1{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.p-right{
+    border: 1px solid black;
+    width: 54%;
+    height: 360px;
+}
+
+.p-left{
+    border: 1px solid black;
+    width: 43%;
+    height: 360px;
+}
+
 
 /* .header,
 .home,
