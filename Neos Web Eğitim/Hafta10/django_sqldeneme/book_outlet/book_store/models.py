@@ -18,15 +18,16 @@ class Book(models.Model):
     
     slug = models.SlugField(default="", null=False)
     
+    
     def __str__(self) :
         return f'{self.title}, ({self.rating})'
     
     def get_absolute_url(self):
-        return reverse("bookDetail", args=[self.id])
+        return reverse("bookDetail", args=[self.slug])
     
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
-        super.save(*args, **kwargs)
+        super().save(*args, **kwargs)
 
 
 

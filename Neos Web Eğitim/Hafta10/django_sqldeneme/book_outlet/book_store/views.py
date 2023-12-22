@@ -17,14 +17,14 @@ def show_books(request):
     return render( request, "all-books.html", context)
 
 
-def book_detail(request, id):
+def book_detail(request, slug):
     
     # try:
     #     book = Book.objects.get(pk=id)
     # except:
     #     raise Http404() 
     
-    book = get_object_or_404(Book, pk=id) #pk = primary key
+    book = get_object_or_404(Book, slug=slug) #pk = primary key
     
     return render( request, "bookdetail.html", {
             "title":book.title,
