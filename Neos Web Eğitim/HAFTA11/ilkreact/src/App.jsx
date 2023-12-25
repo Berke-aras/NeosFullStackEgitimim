@@ -1,4 +1,6 @@
 import Component from "./component";
+import Click from "./click";
+import State from "./state";
 import "./App.css";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
                     backgroundColor: "gray",
                 }}
             ></div>
+            <State />
+            <Click />
         </>
     );
 }
