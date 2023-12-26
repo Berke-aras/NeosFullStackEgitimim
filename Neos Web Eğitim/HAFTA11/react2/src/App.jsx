@@ -4,6 +4,7 @@ import PersonInfo from "./PersonInfo";
 import HighComponent from "./HighComponent";
 import NameShow from "./NameShow";
 import "./App.css";
+import LoginFormu from "./LoginFormu";
 import { useState } from "react";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
     // const isimler = ["Ercüment", "Berke", "Arastaman"];
     const [isimler, setIsimler] = useState(["Ercüment", "Berke", "Arastaman"]);
+    const [numbers, setNumber] = useState([1, 2, 3]);
 
     function handleClick() {
         // isimler.push("Barış");
@@ -24,8 +26,14 @@ function App() {
 
     return (
         <>
+            <LoginFormu />
+
+            <br />
+            <hr />
+            <br />
+
             {isimler.map((isim, i) => {
-                return <NameShow isim={isim} key={i} />;
+                return <NameShow isim={isim} key={isim + i} />;
             })}
 
             <button onClick={handleClick}>buton</button>
