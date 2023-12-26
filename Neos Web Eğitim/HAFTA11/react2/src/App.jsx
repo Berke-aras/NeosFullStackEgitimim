@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import Input from "./input";
+import PersonInfo from "./PersonInfo";
+import HighComponent from "./HighComponent";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const name = "Berke";
+    const surname = "Arastaman";
+    return (
+        <>
+            <div className="w-50 h-50">
+                <button className="btn btn-danger">Tıkla</button>
+            </div>
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+            <HighComponent />
+            <br />
+            <hr />
+            <br />
+            <PersonInfo name={name} soyad={surname} age={22} />
+            <br />
+            <hr />
+            <br />
+            <Input />
+        </>
+    );
 }
 
-export default App
+export default App;
