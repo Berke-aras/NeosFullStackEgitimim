@@ -9,7 +9,7 @@ const Controller = () => {
         <>
             <div>
                 <input
-                    type="text"
+                    type="number"
                     value={number}
                     onChange={(e) => {
                         setNumber(e.target.value);
