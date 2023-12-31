@@ -80,3 +80,49 @@ select {
     appearance: none;
     outline: none;
 }
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo {
+    margin: 0.5;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease;
+}
+
+.todo li {
+    width: 100%;
+    padding: 0 0.8rem;
+}
+
+.complate-btn,
+.trash-btn {
+    background-color: black;
+    color: darkorange;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complate-btn {
+    color: green;
+}
+
+.complated {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
