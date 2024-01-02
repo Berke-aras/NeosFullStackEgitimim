@@ -35,7 +35,13 @@ form {
     flex-direction: column;
 }
 
+form input {
+    width: 90%;
+    margin-left: 0.5rem;
+}
+
 form button {
+    margin-right: 0.5rem;
     color: black;
     background-color: darkorange;
     cursor: pointer;
@@ -94,6 +100,7 @@ select {
 }
 
 .todo {
+    width: 96%;
     margin: 0.5rem;
     background-color: whitesmoke;
     color: black;
@@ -130,7 +137,7 @@ select {
 
 .alert-wrapper {
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 
 .alert-succsess,
@@ -140,6 +147,7 @@ select {
     font-weight: bold;
     width: 25rem;
     text-align: center;
+    border-radius: 40px;
 }
 
 .alert-succsess {
@@ -150,4 +158,11 @@ select {
 .alert-warning {
     background-color: brown;
     transition: 0.5s all ease;
+}
+
+@media only screen and (max-width: 500px) {
+    .todo {
+        width: 100%;
+        font-size: 0.6rem;
+    }
 }
