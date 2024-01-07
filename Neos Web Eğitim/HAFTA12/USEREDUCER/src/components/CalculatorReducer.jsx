@@ -1,26 +1,26 @@
 import React, { useReducer } from "react";
 import "./Calc.css";
-
-function reducer(state, action) {
-    switch (action.type) {
-        case "SET_NUMBER1":
-            return { ...state, number1: action.payload };
-    }
-}
-
-//başlangıçdeğer belirleme
-const initialState = {
-    number1: 0,
-    number2: 0,
-    result: 0,
-};
+import { reducer, initialState } from "./ReducerCalculator";
 
 function CalculatorReducer() {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const handleNumber1Change = (e) => {
-        dispatch({ type, payload });
+        dispatch({ type: "SET_NUMBER1", payload: Number(e.target.value) });
     };
+
+    const handleNumber2Change = (e) => {
+        dispatch({ type: "SET_NUMBER2", payload: Number(e.target.value) });
+    };
+
+    const handleAdd = () => {
+        dispatch({
+            type: "SET_RESULT",
+            payload: state.number1 + state.number2,
+        });
+    };
+
+    // console.log(state);
 
     return (
         <>
@@ -47,18 +47,23 @@ function CalculatorReducer() {
                             type="number"
                             id="number2"
                             className="form-input"
+                            onChange={handleNumber2Change}
                         />
                     </div>
-                    <button className="form-button"> Ekle </button>
+                    <button className="form-button" onClick={handleAdd}>
+                        Ekle
+                    </button>
 
-                    <div className="form-froup">
+                    <div className="form-group">
                         <label htmlFor="result" className="form-label">
                             Result
                         </label>
                         <input
                             type="number"
-                            className="form-input"
                             id="result"
+                            className="form-input"
+                            value={state.result}
+                            readOnly
                         />
                     </div>
                 </div>

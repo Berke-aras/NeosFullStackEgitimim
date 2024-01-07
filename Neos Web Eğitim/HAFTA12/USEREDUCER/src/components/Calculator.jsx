@@ -62,6 +62,7 @@ function Calculator() {
                             className="form-input"
                             id="result"
                             value={result}
+                            readOnly
                         />
                     </div>
                 </div>
