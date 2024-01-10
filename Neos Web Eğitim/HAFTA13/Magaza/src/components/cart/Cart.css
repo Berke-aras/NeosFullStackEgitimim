@@ -1,0 +1,88 @@
+/* OFF CANVAS START */
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #222831;
+    color: #eeeeeeee;
+    padding: 1rem;
+    z-index: 101;
+    animation: slide-down 300ms ease-in-out forwards;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateX(25rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*  OFF CANVAS END */
+
+.cart-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00adb5;
+    padding-bottom: 1rem;
+}
+
+.cart-head h2 {
+    margin: 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+.actions button {
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.actions .cart-order {
+    border: 1px solid #1b4242;
+    background-color: #00adb5;
+    transition: 0.4s ease;
+}
+
+.actions .cart-clear {
+    border: 1px solid #750e21;
+    margin-top: 1rem;
+    background-color: #be3144;
+    transition: 0.4s ease;
+}
+
+.actions .cart-order:hover,
+.actions .cart-order:active {
+    background-color: #096064;
+    transition: 0.4s ease;
+}
+
+.actions .cart-clear:hover {
+    opacity: 0.8;
+    transition: 0.4s ease;
+}
+
+.cart-close {
+    background-color: transparent;
+    border: 0;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: 400;
+    color: whitesmoke;
+}
