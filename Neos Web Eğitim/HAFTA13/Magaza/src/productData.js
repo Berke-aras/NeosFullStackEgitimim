@@ -20,7 +20,7 @@ const products = [
         name: "Ürün 3",
         description: "Ürün 3 ün açıklaması",
         img: "/images/kazak.png",
-        price: 2000.0,
+        price: 200.0,
         amount: 1,
     },
     {

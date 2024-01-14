@@ -1,8 +1,14 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import "./productItem.css";
 import Card from "../UI/Card";
+import { cartContexts } from "../../Context/CartProvider";
+
 function ProductItem({ product }) {
     const { name, description, img, price } = product;
+
+    const { addItem, items, totalAmount } = useContext(cartContexts);
+
+    // console.log(items, totalAmount);
 
     return (
         <Card>
@@ -12,7 +18,9 @@ function ProductItem({ product }) {
             <div className="product-info">
                 <span className="price"> {price}TL </span>
             </div>
-            <button className="add-to-cart"> Sepete Ekle </button>
+            <button className="add-to-cart" onClick={() => addItem(product)}>
+                Sepete Ekle
+            </button>
         </Card>
     );
 }

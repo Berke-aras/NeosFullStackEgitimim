@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./cartItem.css";
+import { cartContexts } from "../../Context/CartProvider";
 
 function CartItem(props) {
+    const { removeItem } = useContext(cartContexts);
+
+    const deleteHandler = (e) => {
+        e.preventDefault();
+        removeItem(props.product.id);
+    };
+
     return (
         <li className="cart-item">
             <div className="cart-item-img">
@@ -18,7 +26,11 @@ function CartItem(props) {
                         </span>
                     </div>
                 </div>
-                <a href="/" className="cart-item-remove">
+                <a
+                    href="/"
+                    className="cart-item-remove"
+                    onClick={deleteHandler}
+                >
                     x
                 </a>
             </div>
