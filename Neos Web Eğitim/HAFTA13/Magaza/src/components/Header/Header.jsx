@@ -2,11 +2,11 @@ import React from "react";
 import "./Header.css";
 import HeaderCartButton from "./HeaderCartButton";
 
-function Header() {
+function Header({ showCartHandler }) {
     return (
         <header className="header">
-            <h1>Trend Mağaza</h1>
-            <HeaderCartButton />
+            <h1>Mağaza</h1>
+            <HeaderCartButton showCartHandler={showCartHandler} />
         </header>
     );
 }

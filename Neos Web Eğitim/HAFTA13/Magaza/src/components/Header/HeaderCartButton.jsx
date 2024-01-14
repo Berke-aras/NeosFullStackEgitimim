@@ -2,9 +2,9 @@ import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import "./HeaderCartButton.css";
 
-function HeaderCartButton() {
+function HeaderCartButton({ showCartHandler }) {
     return (
-        <button className="button">
+        <button className="button" onClick={showCartHandler}>
             <span className="icon">
                 <FaShoppingCart className="iconShop" />
             </span>
