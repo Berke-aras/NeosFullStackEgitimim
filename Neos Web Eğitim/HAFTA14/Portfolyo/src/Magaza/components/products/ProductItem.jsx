@@ -6,6 +6,7 @@ import { cartContexts } from "../../Context/CartProvider";
 function ProductItem({ product }) {
     const { name, description, img, price } = product;
 
+    // const { addItem } = useContext(cartContexts);
     const { addItem } = useContext(cartContexts);
 
     return (

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import CartProvider from "../../../HAFTA13/Magaza/src/Context/CartProvider.jsx";
+import CartProvider from "./Magaza/Context/CartProvider.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

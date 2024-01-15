@@ -68,13 +68,9 @@ const CartProvider = ({ children }) => {
         totalAmount: cartState.totalAmount,
 
         addItem: (item) => {
-            // console.log(item);
-
             dispatchCartAction({ type: "ADD", item });
         },
         removeItem: (id) => {
-            // console.log(id);
-
             dispatchCartAction({
                 type: "REMOVE",
                 id,
