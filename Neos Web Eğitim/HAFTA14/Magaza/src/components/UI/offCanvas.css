@@ -1,0 +1,36 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* OFF CANVAS START */
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #222831;
+    color: #eeeeeeee;
+    padding: 1rem;
+    z-index: 101;
+    animation: slide-down 300ms ease-in-out forwards;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateX(25rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*  OFF CANVAS END */
