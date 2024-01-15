@@ -1,10 +1,11 @@
+import React from "react";
 import { useState } from "react";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Cart from "./components/cart/Cart";
-import Products from "./components/products/Products";
+import Cart from "../components/cart/Cart";
+import Header from "../components/Header/Header";
+import Hero from "../components/Hero/Hero";
+import Products from "../components/products/Products";
 
-function App() {
+function MagazaHome() {
     const [cartIsShow, setCartIsShow] = useState(false);
 
     const showCartHandler = () => {
@@ -27,4 +28,4 @@ function App() {
     );
 }
 
-export default App;
+export default MagazaHome;

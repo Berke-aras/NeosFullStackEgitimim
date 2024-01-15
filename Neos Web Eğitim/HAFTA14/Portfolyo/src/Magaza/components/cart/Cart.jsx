@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import CartItem from "./CartItem";
-import products from "../../productData";
 import OffCanvas from "../UI/OffCanvas";
 import { cartContexts } from "../../Context/CartProvider";
 

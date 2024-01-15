@@ -1,6 +1,6 @@
 import React from "react";
 import "./products.css";
-import products from "../../productData.js";
+import products from "../../../productData.js";
 import ProductItem from "../products/ProductItem.jsx";
 
 function Products() {

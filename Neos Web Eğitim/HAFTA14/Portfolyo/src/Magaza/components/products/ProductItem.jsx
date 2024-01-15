@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, { useContext } from "react";
 import "./productItem.css";
 import Card from "../UI/Card";
 import { cartContexts } from "../../Context/CartProvider";
@@ -6,9 +6,7 @@ import { cartContexts } from "../../Context/CartProvider";
 function ProductItem({ product }) {
     const { name, description, img, price } = product;
 
-    const { addItem, items, totalAmount } = useContext(cartContexts);
-
-    // console.log(items, totalAmount);
+    const { addItem } = useContext(cartContexts);
 
     return (
         <Card>
