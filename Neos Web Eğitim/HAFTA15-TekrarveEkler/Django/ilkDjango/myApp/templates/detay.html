@@ -10,6 +10,12 @@
 
         {% for i in urun %}
         <h3>{{i.isim}}</h3>
+        {% if i.resim %}
+        <img src="{{i.resim.url}}" alt="" />
+        {% else %}
+        <p>Resim Yok</p>
+        {% endif %}
+
         <p>{{i.isim}}</p>
         <small>{{i.fiyat}} TL</small>
         {% endfor %}
