@@ -28,7 +28,7 @@ def createOgrenci(request):
         "form": form
     }
     if request.method == "POST":
-        form = OgrenciForm(request.post, request.FILES)
+        form = OgrenciForm(request.POST, request.FILES)
         if form.is_valid:
             form.save()
             return redirect("index")
