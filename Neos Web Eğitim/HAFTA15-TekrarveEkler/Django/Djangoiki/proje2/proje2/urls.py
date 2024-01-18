@@ -24,5 +24,6 @@ from ogrenciler.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
-    path("detay/<id>", detay,)
+    path("detay/<id>", detay, name="detay"),
+    path("ogrenci-create/", createOgrenci, name="ogrenci-create" )
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

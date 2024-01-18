@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import *
+from .form import *
 
 # Create your views here.
 
@@ -12,6 +13,7 @@ def index(request):
     
     return render(request, "index.html", context)
 
+    
 def detay(request,id):
     ogrenci= Ogrenciler.objects.filter(id=id)
     context={
@@ -19,4 +21,16 @@ def detay(request,id):
     }
     
     return render(request, "detay.html", context)
+
+def createOgrenci(request):
+    form = OgrenciForm()
+    context = {
+        "form": form
+    }
+    if request.method == "POST":
+        form = OgrenciForm(request.post, request.FILES)
+        if form.is_valid:
+            form.save()
+            return redirect("index")
+    return render (request, "ogrenci-create.html", context)
 

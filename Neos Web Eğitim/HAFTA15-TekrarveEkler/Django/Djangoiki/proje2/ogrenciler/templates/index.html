@@ -11,14 +11,14 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        {% comment %}
+
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-        {% endcomment %}
     </head>
     <body>
-        {% comment %}
-        <img src="{% static 'img/1.png' %}" alt="" />
-        {% endcomment %} {% include "includes/_navbar.html" %} {% block body %}
+        {% include "includes/_navbar.html" %}
+        <!--  <img src="{% static 'img/1.png' %}" alt="" class="imge" />-->
+
+        {% block body %}
         <div class="row">
             {% for ogrenci in ogrenciler %}
             <div class="col-4">
@@ -31,7 +31,12 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ogrenci.adSoyad}}</h5>
                         <p class="card-text">{{ogrenci.hakkinda}}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a
+                            href='{% url "detay" ogrenci.id %}'
+                            class="btn btn-primary"
+                        >
+                            Ayrıntı
+                        </a>
                     </div>
                 </div>
             </div>
