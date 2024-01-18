@@ -20,10 +20,13 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from ogrenciler.views import *
+from users.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
     path("detay/<id>", detay, name="detay"),
-    path("ogrenci-create/", createOgrenci, name="ogrenci-create" )
+    path("ogrenci-create/", createOgrenci, name="ogrenci-create" ),
+    path("register/", register, name="register")
+    
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
